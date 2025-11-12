@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+button {
+  font-family: "Baskervville", serif;
+}
+
+p,
+span {
+  font-family: "Nunito", sans-serif;
+}
+
+.page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 0rem;
+  gap: 2rem;
+}
+.page-title h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 80px;
+  letter-spacing: 10px;
+  color: #725A58;
+}
+@media (max-width: 768px) {
+  .page-title h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+}
+.page-title .separator {
+  width: 12.5rem;
+  height: 1px;
+  background-color: #E3B6B1;
+}
+.page-title p {
+  height: 3.375rem;
+  font-weight: 300;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .page-title p {
+    font-size: 16px;
+  }
+}
+
+.services-main {
+  width: 100%;
+  gap: 2.5rem;
+  background-color: #FAE9E7;
+}
+.services-main .services-chat {
+  position: sticky;
+  top: 0;
+  left: 100%;
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: #B99692;
+  border: 0;
+}
+@media (max-width: 768px) {
+  .services-main .services-chat {
+    display: none;
+  }
+}
+.services-main .services-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 3.75rem 10rem;
+  gap: 2.5rem;
+}
+@media (max-width: 768px) {
+  .services-main .services-items {
+    padding: 0 0 2.5rem;
+  }
+}
+.services-main .services-items .services-item {
+  display: flex;
+  align-items: center;
+  max-width: 64rem;
+  gap: 2.5rem;
+}
+@media (max-width: 768px) {
+  .services-main .services-items .services-item {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+.services-main .services-items .services-item img {
+  width: 20rem;
+  height: 23.75rem;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .services-main .services-items .services-item img {
+    width: 360px;
+  }
+}
+.services-main .services-items .services-item .services-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media (max-width: 768px) {
+  .services-main .services-items .services-item .services-info {
+    max-width: 20rem;
+  }
+}
+.services-main .services-items .services-item .services-info h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #725A58;
+}
+.services-main .services-items .services-item .services-info .services-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.services-main .services-items .services-item .services-info .services-detail .services-price,
+.services-main .services-items .services-item .services-info .services-detail .services-hours {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+.services-main .services-items .services-item .services-info .services-detail .services-price img,
+.services-main .services-items .services-item .services-info .services-detail .services-hours img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+@media (max-width: 768px) {
+  .services-main .services-items .services-item .services-info .services-detail .services-price img,
+  .services-main .services-items .services-item .services-info .services-detail .services-hours img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+.services-main .services-items .services-item .services-info .services-detail .services-price span,
+.services-main .services-items .services-item .services-info .services-detail .services-hours span {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #191919;
+}
+@media (max-width: 768px) {
+  .services-main .services-items .services-item .services-info .services-detail .services-price span,
+  .services-main .services-items .services-item .services-info .services-detail .services-hours span {
+    font-size: 1rem;
+  }
+}
+.services-main .services-items .services-item .services-info .services-description {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.services-main .services-items .services-item .services-info .services-description h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #191919;
+}
+.services-main .services-items .services-item .services-info .services-description p {
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: #191919;
+}
+.services-main .services-items .services-item .services-info button {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #5E4A49;
+  width: 10.75rem;
+  height: 3.75rem;
+  border: 0.8px solid #5E4A49;
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  .services-main .services-items .services-item .services-info button {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap");
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description p {
+  font-size: 2rem;
+  text-align: center;
+  max-width: 80%;
+}
+
+.description h1 {
+  font-family: Baskervville;
+  font-weight: 400;
+  font-size: 5rem;
+  letter-spacing: 10.4px;
+  color: #725A58;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 212, 219);
+  min-height: 100vh;
+  gap: 1.5rem;
+  width: 100%;
+  /* height: 1372px; */
+  padding-bottom: 10rem;
+}
+
+img {
+  width: 20.938rem;
+  height: 21.688rem;
+  /* height: auto; */
+  object-fit: cover;
+}
+
+.image-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3,1fr); */
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.catalog > button {
+  border: 0.8px solid black;
+  width: 10.063rem;
+  height: 3.875rem;
+  color: #725A58;
+}
+
+button {
+  border: none;
+  background: none;
+  font-size: 1.9rem;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 50;
+}
+
+#makeup, #hairstyle {
+  margin-top: 40px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgb(91, 90, 90);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.border-bottom {
+  position: relative;
+  border: none;
+}
+
+.border-bottom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: black;
+  bottom: -13px;
+  width: 100%; /* underline matches button width */
+  height: 2px;
+}
+
+/*# sourceMappingURL=main.css.map */

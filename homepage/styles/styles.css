@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -139,6 +147,398 @@ header {
 .thumbnail .overlay button:hover {
   background-color: rgba(255, 255, 255, 0.5);
   color: #2a2a2a;
+}
+
+.professional-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  padding: 3rem 4rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f5f0eb;
+}
+
+.professional-card {
+  flex: 0 0 auto;
+}
+.professional-card .card-image {
+  position: relative;
+  width: 380px;
+  border: 10px solid white;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(to bottom, #e8b4b8 0%, #f5e5e6 60%, white 100%);
+}
+.professional-card .card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  mix-blend-mode: multiply;
+}
+.professional-card .card-image .instagram-badge {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 7px 14px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.professional-card .card-image .instagram-badge i {
+  font-size: 1rem;
+}
+.professional-card .card-image .certification {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  background-color: white;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+.professional-card .card-image .certification img {
+  height: 28px;
+  width: auto;
+  mix-blend-mode: normal;
+}
+.professional-card .card-image .certification .cert-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.professional-card .card-image .certification .cert-text span:first-child {
+  font-weight: 600;
+}
+.professional-card .card-image .certification .cert-text span:last-child {
+  font-weight: 400;
+}
+
+.professional-content {
+  flex: 1;
+  max-width: 550px;
+  position: relative;
+}
+.professional-content .cb-icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 1.2rem;
+  opacity: 0.5;
+}
+.professional-content h2 {
+  font-family: "baskervville", serif;
+  font-size: 2.5rem;
+  color: #2a2a2a;
+  margin-bottom: 1.8rem;
+  line-height: 1.25;
+  font-weight: 400;
+}
+.professional-content p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #6b6b6b;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+.professional-content .about-btn {
+  background-color: transparent;
+  color: #6b6b6b;
+  border: 1.5px solid #c4c4c4;
+  padding: 0.85rem 2.8rem;
+  font-size: 0.95rem;
+  font-family: "baskervville", serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.03rem;
+}
+.professional-content .about-btn:hover {
+  background-color: #6b6b6b;
+  color: white;
+  border-color: #6b6b6b;
+}
+.professional-content .signature {
+  max-width: 300px;
+  height: auto;
+  opacity: 0.4;
+  margin-left: 20px;
+}
+
+.brands-section {
+  padding: 3rem 2rem 5rem;
+  background-color: #f5f0eb;
+  text-align: center;
+}
+.brands-section .brands-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.brands-section h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #8a8a8a;
+  font-weight: 300;
+  letter-spacing: 0.08rem;
+  text-transform: capitalize;
+  white-space: nowrap;
+  margin: 0;
+}
+.brands-section .brands-divider {
+  flex: 1;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+.brands-section .brands-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.brands-section .brands-grid .brands-image {
+  width: 70%;
+  height: auto;
+  opacity: 0.6;
+  filter: grayscale(20%);
+}
+
+.star-section {
+  background-color: #e8d5d6;
+  padding: 5rem 0 3rem;
+}
+
+.star-content {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 4rem;
+  padding: 0 2rem;
+}
+.star-content h2 {
+  font-family: "baskervville", serif;
+  font-size: 3.5rem;
+  color: #494040;
+  font-weight: 400;
+  letter-spacing: 0.35rem;
+  margin-bottom: 1.8rem;
+}
+.star-content p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  color: #7a6b6b;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+.star-content .work-btn {
+  background-color: transparent;
+  color: #7a6b6b;
+  border: 1.5px solid #a8a8a8;
+  padding: 0.85rem 2.8rem;
+  font-size: 0.95rem;
+  font-family: "baskervville", serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.03rem;
+}
+.star-content .work-btn:hover {
+  background-color: #7a6b6b;
+  color: white;
+  border-color: #7a6b6b;
+}
+
+.star-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 100%;
+  margin-bottom: 4rem;
+  padding: 0;
+}
+.star-gallery .gallery-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+.star-gallery .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.star-gallery .gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.testimonial-section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 2rem 4rem;
+}
+.testimonial-section .testimonial-quote {
+  font-family: "baskervville", serif;
+  font-size: 6rem;
+  color: #c4a5a5;
+  line-height: 0.5;
+  margin-bottom: 1rem;
+  opacity: 0.6;
+}
+.testimonial-section .testimonial-content .testimonial-text {
+  font-family: "baskervville", serif;
+  font-size: 1.15rem;
+  color: #6b6b6b;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+.testimonial-section .testimonial-content .testimonial-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.testimonial-section .testimonial-content .testimonial-controls .testimonial-prev,
+.testimonial-section .testimonial-content .testimonial-controls .testimonial-next {
+  background-color: transparent;
+  border: none;
+  color: #8a8a8a;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+.testimonial-section .testimonial-content .testimonial-controls .testimonial-prev:hover,
+.testimonial-section .testimonial-content .testimonial-controls .testimonial-next:hover {
+  color: #6b6b6b;
+}
+.testimonial-section .testimonial-content .testimonial-controls .testimonial-prev:disabled,
+.testimonial-section .testimonial-content .testimonial-controls .testimonial-next:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.testimonial-section .testimonial-content .testimonial-controls .testimonial-name {
+  font-family: "Brush Script MT", cursive;
+  font-size: 2rem;
+  color: #6b6b6b;
+  font-style: italic;
+  margin: 0;
+}
+
+.services-section {
+  background-color: #f5f0eb;
+  padding: 5rem 2rem;
+}
+
+.services-content {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 4rem;
+}
+.services-content h2 {
+  font-family: "Georgia", serif;
+  font-size: 2.8rem;
+  color: #7a6b6b;
+  font-weight: 400;
+  letter-spacing: 0.35rem;
+  margin-bottom: 1.8rem;
+}
+.services-content p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  color: #7a6b6b;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+.services-content .quote-btn {
+  background-color: transparent;
+  color: #7a6b6b;
+  border: 1.5px solid #a8a8a8;
+  padding: 0.85rem 2.8rem;
+  font-size: 0.95rem;
+  font-family: "baskervville", serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.03rem;
+}
+.services-content .quote-btn:hover {
+  background-color: #7a6b6b;
+  color: white;
+  border-color: #7a6b6b;
+}
+
+.services-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+}
+.services-gallery .service-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 10px solid white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+.services-gallery .service-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.services-gallery .service-card .service-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  transition: background 0.3s ease;
+}
+.services-gallery .service-card .service-overlay h3 {
+  font-family: "Georgia", serif;
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0.05rem;
+}
+.services-gallery .service-card:hover img {
+  transform: scale(1.05);
+}
+.services-gallery .service-card:hover .service-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+}
+.services-gallery .service-card-large {
+  height: 600px;
+}
+.services-gallery .service-card-large img {
+  height: 100%;
+}
+.services-gallery .service-card:not(.service-card-large) {
+  height: 450px;
+}
+.services-gallery .service-card:not(.service-card-large) img {
+  height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

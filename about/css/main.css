@@ -53,20 +53,79 @@ span {
   }
 }
 
+header {
+  background-color: #f5f0eb;
+  border-bottom: 1px solid #d4d4d4;
+  padding: 1.5rem 3rem;
+  font-family: "baskervville", serif;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+header .navbar .line {
+  border-left: 1px solid #b8b8b8;
+  height: 24px;
+  align-self: center;
+}
+header .navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 0;
+  align-items: center;
+}
+header .navbar ul li {
+  padding: 0 1.25rem;
+}
+header .navbar ul li a {
+  text-decoration: none;
+  color: #8a8a8a;
+  font-size: 1.15rem;
+  transition: color 0.3s ease;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+}
+header .navbar ul li a:hover {
+  color: #2a2a2a;
+}
+header .navbar ul li i {
+  font-size: 1.35rem;
+  color: #8a8a8a;
+  transition: color 0.3s ease;
+}
+header .navbar ul li i:hover {
+  color: #2a2a2a;
+}
+header .navbar .nav-left {
+  flex: 1;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+header .navbar .nav-right {
+  flex: 1;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+header .navbar .logo {
+  flex-shrink: 0;
+  margin: 0 2.5rem;
+}
+header .navbar .logo img {
+  height: 100px;
+  width: auto;
+}
+
 .about-main {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 2rem 0 6rem;
   background-color: #FAE9E7;
 }
-@media (max-width: 768px) {
-  .about-main {
-    padding: 0 0 2rem;
-  }
-}
-.about-main .services-chat {
+.about-main .chat-button {
   position: sticky;
   top: 0;
   left: 100%;
@@ -76,19 +135,21 @@ span {
   border: 0;
 }
 @media (max-width: 768px) {
-  .about-main .services-chat {
+  .about-main .chat-button {
     display: none;
   }
 }
 .about-main .about-content {
   display: flex;
+  align-items: center;
   max-width: 64rem;
+  padding: 2rem 3.75rem 6rem;
   gap: 2.5rem;
 }
 @media (max-width: 768px) {
   .about-main .about-content {
+    padding: 0 0 2rem;
     flex-direction: column;
-    align-items: center;
   }
 }
 .about-main .about-content .about-image {
@@ -169,11 +230,12 @@ span {
   }
 }
 .about-brand .about-brand-items {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   column-gap: 8rem;
   row-gap: 4rem;
-  max-width: 56.25rem;
+  max-width: 48rem;
   padding: 2rem;
   opacity: 60%;
 }
@@ -186,7 +248,7 @@ span {
 .about-brand .about-brand-items img {
   max-width: 5.625rem;
   max-height: 4.875rem;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=main.css.map */

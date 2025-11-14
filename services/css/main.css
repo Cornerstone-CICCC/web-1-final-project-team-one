@@ -16,6 +16,71 @@ span {
   font-family: "Nunito", sans-serif;
 }
 
+header {
+  background-color: #f5f0eb;
+  border-bottom: 1px solid #d4d4d4;
+  padding: 1.5rem 3rem;
+  font-family: "baskervville", serif;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+header .navbar .line {
+  border-left: 1px solid #b8b8b8;
+  height: 24px;
+  align-self: center;
+}
+header .navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 0;
+  align-items: center;
+}
+header .navbar ul li {
+  padding: 0 1.25rem;
+}
+header .navbar ul li a {
+  text-decoration: none;
+  color: #8a8a8a;
+  font-size: 1.15rem;
+  transition: color 0.3s ease;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+}
+header .navbar ul li a:hover {
+  color: #2a2a2a;
+}
+header .navbar ul li i {
+  font-size: 1.35rem;
+  color: #8a8a8a;
+  transition: color 0.3s ease;
+}
+header .navbar ul li i:hover {
+  color: #2a2a2a;
+}
+header .navbar .nav-left {
+  flex: 1;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+header .navbar .nav-right {
+  flex: 1;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+header .navbar .logo {
+  flex-shrink: 0;
+  margin: 0 2.5rem;
+}
+header .navbar .logo img {
+  height: 100px;
+  width: auto;
+}
+
 .page-title {
   display: flex;
   flex-direction: column;
@@ -58,7 +123,7 @@ span {
   gap: 2.5rem;
   background-color: #FAE9E7;
 }
-.services-main .services-chat {
+.services-main .chat-button {
   position: sticky;
   top: 0;
   left: 100%;
@@ -68,7 +133,7 @@ span {
   border: 0;
 }
 @media (max-width: 768px) {
-  .services-main .services-chat {
+  .services-main .chat-button {
     display: none;
   }
 }
@@ -103,7 +168,7 @@ span {
 }
 @media (max-width: 768px) {
   .services-main .services-items .services-item img {
-    width: 360px;
+    width: 22.5rem;
   }
 }
 .services-main .services-items .services-item .services-info {

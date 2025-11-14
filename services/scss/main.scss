@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
 * {
-	// overflow-x: hidden;
 	margin: 0;
 }
 
@@ -16,6 +15,83 @@ button {
 p,
 span {
 	font-family: 'Nunito', sans-serif;
+}
+
+header {
+	background-color: #f5f0eb;
+	border-bottom: 1px solid #d4d4d4;
+	padding: 1.5rem 3rem;
+	font-family: 'baskervville', serif;
+
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1600px;
+		margin: 0 auto;
+
+		.line {
+			border-left: 1px solid #b8b8b8;
+			height: 24px;
+			align-self: center;
+		}
+
+		ul {
+			display: flex;
+			list-style: none;
+			gap: 0;
+			align-items: center;
+
+			li {
+				padding: 0 1.25rem;
+
+				a {
+					text-decoration: none;
+					color: #8a8a8a;
+					font-size: 1.15rem;
+					transition: color 0.3s ease;
+					font-weight: 400;
+					letter-spacing: 0.02rem;
+
+					&:hover {
+						color: #2a2a2a;
+					}
+				}
+
+				i {
+					font-size: 1.35rem;
+					color: #8a8a8a;
+					transition: color 0.3s ease;
+
+					&:hover {
+						color: #2a2a2a;
+					}
+				}
+			}
+		}
+
+		.nav-left {
+			flex: 1;
+			justify-content: flex-start;
+			padding-left: 2rem;
+		}
+
+		.nav-right {
+			flex: 1;
+			justify-content: flex-end;
+			padding-right: 2rem;
+		}
+
+		.logo {
+			flex-shrink: 0;
+			margin: 0 2.5rem;
+
+			img {
+				height: 100px;
+				width: auto;
+			}
+		}
+	}
 }
 
 .page-title {
@@ -61,7 +137,7 @@ span {
 	gap: 2.5rem;
 	background-color: #FAE9E7;
 
-	.services-chat {
+	.chat-button {
 		position: sticky;
 		top: 0;
 		left: 100%;

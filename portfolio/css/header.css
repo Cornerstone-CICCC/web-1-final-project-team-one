@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=GFS+Didot&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "GFS Didot";
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+ul a {
+  text-decoration: none;
+  color: #725A58;
+}
+ul a:link {
+  color: #725A58;
+}
+ul a li a::after {
+  content: "|";
+  padding-left: 1rem;
+}
+
+.header-container {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.first-header ul {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.last-header ul {
+  display: flex;
+  gap: 2.5rem;
+}
+
+/*# sourceMappingURL=header.css.map */

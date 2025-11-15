@@ -23,6 +23,7 @@
   font-size: 5rem;
   letter-spacing: 10.4px;
   color: #725A58;
+  margin-bottom: 0;
 }
 
 .catalog {
@@ -38,10 +39,17 @@
 }
 
 img {
-  width: 20.938rem;
+  width: 100%;
   height: 21.688rem;
   /* height: auto; */
   object-fit: cover;
+}
+
+.under-line {
+  width: 200px;
+}
+.under-line hr {
+  color: #E3B6B1;
 }
 
 .image-display {
@@ -52,25 +60,35 @@ img {
   gap: 16px;
   justify-content: space-around;
   width: 80%;
+  max-width: 63rem;
 }
 
-.catalog > button {
-  border: 0.8px solid black;
+.catalog button {
   width: 10.063rem;
   height: 3.875rem;
   color: #725A58;
 }
 
+.border-button {
+  border: 0.8px solid black;
+  font-size: 1.2rem;
+}
+
 button {
   border: none;
   background: none;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-family: "Playfair Display", sans-serif;
   font-weight: 50;
 }
 
 #makeup, #hairstyle {
   margin-top: 40px;
+  border: none;
+}
+
+#hairstyle {
+  margin-right: 0;
 }
 
 .btn-container {
@@ -81,6 +99,8 @@ button {
   border-bottom: 1px solid rgb(91, 90, 90);
   padding-left: 10px;
   padding-right: 10px;
+  padding-right: 0;
+  margin-right: 0;
 }
 
 .border-bottom {
@@ -96,6 +116,28 @@ button {
   bottom: -13px;
   width: 100%; /* underline matches button width */
   height: 2px;
+}
+
+@media (max-width: 640px) {
+  .image-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-display img {
+    width: 100%;
+  }
+  .description h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .description p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .btn-container {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

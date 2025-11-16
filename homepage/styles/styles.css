@@ -26,18 +26,17 @@ header {
   font-family: "baskervville", serif;
 }
 
-.line {
-  border-left: 1px solid #b8b8b8;
-  height: 24px;
-  align-self: center;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1600px;
   margin: 0 auto;
+}
+.navbar .line {
+  border-left: 1px solid #b8b8b8;
+  height: 24px;
+  align-self: center;
 }
 .navbar ul {
   display: flex;
@@ -393,11 +392,17 @@ header {
 }
 .testimonial-section .testimonial-quote {
   font-family: "baskervville", serif;
-  font-size: 6rem;
+  font-size: 2rem;
   color: #c4a5a5;
   line-height: 0.5;
   margin-bottom: 1rem;
   opacity: 0.6;
+}
+.testimonial-section .testimonial-quote .fa-quote-right {
+  font-size: 2rem;
+  color: #c4a5a5;
+  margin: 0 1rem;
+  vertical-align: middle;
 }
 .testimonial-section .testimonial-content .testimonial-text {
   font-family: "baskervville", serif;
@@ -588,12 +593,24 @@ header {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-.makeup-101 .recognition > i:last-of-type {
-  font-size: 1.3rem;
-  color: #b8a5a5;
+.makeup-101 .recognition .arrow-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
   grid-column: 2/3;
   grid-row: 1/2;
   align-self: center;
+  transition: all 0.3s ease;
+}
+.makeup-101 .recognition .arrow-btn i {
+  font-size: 1.3rem;
+  color: #b8a5a5;
+  transition: all 0.3s ease;
+}
+.makeup-101 .recognition .arrow-btn:hover i {
+  color: #7a6b6b;
+  transform: translateX(3px);
 }
 .makeup-101 .recognition p {
   font-family: Arial, Helvetica, sans-serif;
@@ -647,6 +664,56 @@ header {
   bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   pointer-events: none;
+}
+
+.diy-beauty {
+  padding: 5rem 4rem;
+  text-align: center;
+}
+.diy-beauty h1 {
+  font-family: "Georgia", serif;
+  font-size: 2.8rem;
+  color: #7a6b6b;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  margin-bottom: 3rem;
+}
+.diy-beauty .videos-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+.diy-beauty .videos {
+  position: relative;
+  width: 315px;
+  height: 560px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.diy-beauty .videos iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+.diy-beauty .more-tips-btn {
+  background-color: transparent;
+  color: #7a6b6b;
+  border: 1px solid #9a8a8a;
+  padding: 0.75rem 2.5rem;
+  font-size: 0.9rem;
+  font-family: "Georgia", serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.02rem;
+}
+.diy-beauty .more-tips-btn:hover {
+  background-color: #7a6b6b;
+  color: white;
+  border-color: #7a6b6b;
 }
 
 /*# sourceMappingURL=styles.css.map */

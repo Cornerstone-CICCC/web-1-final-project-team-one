@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
 * {
-	// overflow-x: hidden;
 	margin: 0;
 }
 
@@ -133,24 +132,58 @@ header {
 }
 
 .about-main {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	overflow-x: hidden;
 	width: 100%;
 	background-color: #FAE9E7;
 
-	.chat-button {
-		position: sticky;
+	.chat-buttons {
+		position: absolute;
 		top: 0;
-		left: 100%;
+		right: 0;
 		width: 3.75rem;
-		height: 3.75rem;
-		background-color: #B99692;
 		border: 0;
+		background-color: transparent;
+
+		.open {
+			display: flex;
+		}
+
+		.close {
+			display: none;
+		}
+
+		.chat-button-container {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+
+			div {
+				opacity: 0;
+				width: 3.75rem;
+				height: 11.25rem;
+			}
+
+			img {
+				opacity: 80%;
+				width: 3.75rem;
+				height: 3.75rem;
+				cursor: pointer;
+
+				&:hover {
+					opacity: 100;
+				}
+			}
+		}
 
 		@media(max-width: 768px) {
 			display: none;
 		}
+
 	}
 
 	.about-content {
@@ -226,6 +259,13 @@ header {
 				height: 3.75rem;
 				border: 0.8px solid #5E4A49;
 				background-color: transparent;
+
+				&:hover {
+					background-color: #B99692;
+					border: 0.8px solid #B99692;
+					color: #F8F6F4;
+					cursor: pointer;
+				}
 			}
 		}
 	}

@@ -119,23 +119,50 @@ header .navbar .logo img {
 }
 
 .about-main {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
   width: 100%;
   background-color: #FAE9E7;
 }
-.about-main .chat-button {
-  position: sticky;
+.about-main .chat-buttons {
+  position: absolute;
   top: 0;
-  left: 100%;
+  right: 0;
+  width: 3.75rem;
+  border: 0;
+  background-color: transparent;
+}
+.about-main .chat-buttons .open {
+  display: flex;
+}
+.about-main .chat-buttons .close {
+  display: none;
+}
+.about-main .chat-buttons .chat-button-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.about-main .chat-buttons .chat-button-container div {
+  opacity: 0;
+  width: 3.75rem;
+  height: 11.25rem;
+}
+.about-main .chat-buttons .chat-button-container img {
+  opacity: 80%;
   width: 3.75rem;
   height: 3.75rem;
-  background-color: #B99692;
-  border: 0;
+  cursor: pointer;
+}
+.about-main .chat-buttons .chat-button-container img:hover {
+  opacity: 100;
 }
 @media (max-width: 768px) {
-  .about-main .chat-button {
+  .about-main .chat-buttons {
     display: none;
   }
 }
@@ -211,6 +238,12 @@ header .navbar .logo img {
   height: 3.75rem;
   border: 0.8px solid #5E4A49;
   background-color: transparent;
+}
+.about-main .about-content .about-info button:hover {
+  background-color: #B99692;
+  border: 0.8px solid #B99692;
+  color: #F8F6F4;
+  cursor: pointer;
 }
 
 .about-brand {

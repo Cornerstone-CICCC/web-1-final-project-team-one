@@ -12,7 +12,7 @@
 	<header>
 		<nav class="navbar">
 			<ul class="nav-left">
-				<li><a href="/">Home</a></li>
+				<li><a href="/homepage">Home</a></li>
 				<div class="line"></div>
 				<li><a href="/my-work">My Work</a></li>
 				<div class="line"></div>
@@ -41,9 +41,18 @@
 		<h1>CARLA BEAUTY</h1>
 	</div>
 	<main class="about-main">
-		<button class="chat-button">
-			<img src="/assets/icons/ic_chat.svg" alt="Chat Icon">
-		</button>
+		<div class="chat-buttons">
+			<div class="chat-button-container close" id="chat-contact-icons">
+				<img src="/assets/icons/icon_instagram.svg" class="fake-button" alt="Instagram Icon">
+				<img src="/assets/icons/icon_phone.svg" class="fake-button" alt="Phone Icon">
+				<img src="/assets/icons/icon_whatsapp.svg" class="fake-button" alt="Whatsapp Icon">
+				<img src="/assets/icons/icon_close.svg" id="close-button" alt="Close Icon">
+			</div>
+			<div class="chat-button-container open" id="chat-icon">
+				<div></div>
+				<img src="/assets/icons/ic_chat.svg" id="chat-button" alt="Chat Icon">
+			</div>
+		</div>
 		<section class="about-content">
 			<div class="about-image">
 				<img src="/assets/carla/carla_bw.jpg" alt="Carla">
@@ -58,7 +67,7 @@
 					experience in Brazil and Canada, my goal is to provide clients with an unforgettable experience that leaves
 					them feeling beautiful and confident.
 				</p>
-				<button>My Work</button>
+				<button class="fake-button">My Work</button>
 			</div>
 		</section>
 	</main>

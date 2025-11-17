@@ -14,18 +14,19 @@ ul {
     &:link {
         color: #725A58;
     }
-    li {
-        a::after{
-            content: "|";
-            padding-left: 1rem;
-        }
+    &::after{
+        content: "|";
+        padding-left: 0.6rem;
+        color: #E3B6B1;
+        font-weight: 100;
     }
+
 }
 }
 
 .header-container { 
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
     justify-content: center;
 }
 

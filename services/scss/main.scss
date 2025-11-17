@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+* {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+button {
+	font-family: 'Baskervville', serif;
+}
+
+p,
+span {
+	font-family: 'Nunito', sans-serif;
+}
+
+header {
+	background-color: #f5f0eb;
+	border-bottom: 1px solid #d4d4d4;
+	padding: 1.5rem 3rem;
+	font-family: 'baskervville', serif;
+
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1600px;
+		margin: 0 auto;
+
+		.line {
+			border-left: 1px solid #b8b8b8;
+			height: 24px;
+			align-self: center;
+		}
+
+		ul {
+			display: flex;
+			list-style: none;
+			gap: 0;
+			align-items: center;
+
+			li {
+				padding: 0 1.25rem;
+
+				a {
+					text-decoration: none;
+					color: #8a8a8a;
+					font-size: 1.15rem;
+					transition: color 0.3s ease;
+					font-weight: 400;
+					letter-spacing: 0.02rem;
+
+					&:hover {
+						color: #2a2a2a;
+					}
+				}
+
+				i {
+					font-size: 1.35rem;
+					color: #8a8a8a;
+					transition: color 0.3s ease;
+
+					&:hover {
+						color: #2a2a2a;
+					}
+				}
+			}
+		}
+
+		.nav-left {
+			flex: 1;
+			justify-content: flex-start;
+			padding-left: 2rem;
+		}
+
+		.nav-right {
+			flex: 1;
+			justify-content: flex-end;
+			padding-right: 2rem;
+		}
+
+		.logo {
+			flex-shrink: 0;
+			margin: 0 2.5rem;
+
+			img {
+				height: 100px;
+				width: auto;
+			}
+		}
+	}
+}
+
+.page-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 1.5rem 0rem;
+	gap: 2rem;
+
+	h1 {
+		text-align: center;
+		font-weight: 400;
+		font-size: 80px;
+		letter-spacing: 10px;
+		color: #725A58;
+
+		@media (max-width: 768px) {
+			font-size: 40px;
+			letter-spacing: 5px;
+		}
+	}
+
+	.separator {
+		width: 12.5rem;
+		height: 1px;
+		background-color: #E3B6B1;
+	}
+
+	p {
+		height: 3.375rem;
+		font-weight: 300;
+		text-align: center;
+
+		@media (max-width: 768px) {
+			font-size: 16px;
+		}
+	}
+}
+
+.services-main {
+	width: 100%;
+	gap: 2.5rem;
+	background-color: #FAE9E7;
+
+	.chat-button {
+		position: sticky;
+		top: 0;
+		left: 100%;
+		width: 3.75rem;
+		height: 3.75rem;
+		background-color: #B99692;
+		border: 0;
+
+		@media(max-width: 768px) {
+			display: none;
+		}
+	}
+
+	.services-items {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2rem 3.75rem 10rem;
+		gap: 2.5rem;
+
+		@media (max-width: 768px) {
+			padding: 0 0 2.5rem;
+		}
+
+		.services-item {
+			display: flex;
+			align-items: center;
+			max-width: 64rem;
+			gap: 2.5rem;
+
+			@media (max-width: 768px) {
+				flex-direction: column;
+				gap: 1.5rem;
+			}
+
+			img {
+				width: 20rem;
+				height: 23.75rem;
+				object-fit: cover;
+
+				@media (max-width: 768px) {
+					width: 22.5rem;
+				}
+			}
+
+			.services-info {
+				display: flex;
+				flex-direction: column;
+				gap: 1.5rem;
+
+				@media (max-width: 768px) {
+					max-width: 20rem;
+				}
+
+				h2 {
+					font-size: 2.5rem;
+					font-weight: 400;
+					color: #725A58;
+				}
+
+				.services-detail {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 1.5rem;
+
+					.services-price,
+					.services-hours {
+						display: flex;
+						align-items: center;
+						gap: 0.375rem;
+
+						img {
+							height: 1.5rem;
+							width: 1.5rem;
+
+							@media (max-width: 768px) {
+								width: 1.25rem;
+								height: 1.25rem;
+							}
+						}
+
+						span {
+							font-size: 1.125rem;
+							font-weight: 300;
+							color: #191919;
+
+							@media (max-width: 768px) {
+								font-size: 1rem;
+							}
+						}
+					}
+				}
+
+				.services-description {
+					display: flex;
+					flex-direction: column;
+					gap: 9px;
+
+					h3 {
+						font-size: 1.5rem;
+						font-weight: 400;
+						color: #191919;
+					}
+
+					p {
+						font-weight: 300;
+						font-size: 1.125rem;
+						color: #191919;
+					}
+				}
+
+				button {
+					font-size: 1.25rem;
+					font-weight: 400;
+					color: #5E4A49;
+					width: 10.75rem;
+					height: 3.75rem;
+					border: 0.8px solid #5E4A49;
+					background-color: transparent;
+
+					@media (max-width: 768px) {
+						width: 100%;
+					}
+
+				}
+			}
+		}
+	}
+
+}

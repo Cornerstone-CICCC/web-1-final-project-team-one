@@ -17,8 +17,7 @@ span {
 }
 
 header {
-  background-color: #f5f0eb;
-  border-bottom: 1px solid #d4d4d4;
+  background-color: #F8F6F4;
   padding: 1.5rem 3rem;
   font-family: "baskervville", serif;
 }
@@ -88,6 +87,7 @@ header .navbar .logo img {
   width: 100%;
   padding: 1.5rem 0rem;
   gap: 2rem;
+  background-color: #F8F6F4;
 }
 .page-title h1 {
   text-align: center;
@@ -119,21 +119,47 @@ header .navbar .logo img {
 }
 
 .services-main {
+  position: relative;
   width: 100%;
   gap: 2.5rem;
   background-color: #FAE9E7;
 }
-.services-main .chat-button {
-  position: sticky;
+.services-main .chat-buttons {
+  position: absolute;
   top: 0;
-  left: 100%;
+  right: 0;
+  width: 3.75rem;
+  border: 0;
+  background-color: transparent;
+}
+.services-main .chat-buttons .open {
+  display: flex;
+}
+.services-main .chat-buttons .close {
+  display: none;
+}
+.services-main .chat-buttons .chat-button-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.services-main .chat-buttons .chat-button-container div {
+  opacity: 0;
+  width: 3.75rem;
+  height: 11.25rem;
+}
+.services-main .chat-buttons .chat-button-container img {
+  opacity: 80%;
   width: 3.75rem;
   height: 3.75rem;
-  background-color: #B99692;
-  border: 0;
+  cursor: pointer;
+}
+.services-main .chat-buttons .chat-button-container img:hover {
+  opacity: 100;
 }
 @media (max-width: 768px) {
-  .services-main .chat-button {
+  .services-main .chat-buttons {
     display: none;
   }
 }
@@ -249,6 +275,67 @@ header .navbar .logo img {
   .services-main .services-items .services-item .services-info button {
     width: 100%;
   }
+}
+
+footer {
+  background-color: #F8F6F4;
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+  font-family: "baskervville", serif;
+}
+footer .logo {
+  margin-bottom: 1rem;
+}
+footer .logo img {
+  height: 120px;
+  width: auto;
+}
+footer > p {
+  color: #8a8a8a;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02rem;
+}
+footer i {
+  font-size: 1.5rem;
+  color: #8a8a8a;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+footer i:hover {
+  color: #2a2a2a;
+}
+footer .divider {
+  width: 100%;
+  max-width: 1200px;
+  height: 1px;
+  background-color: #d4d4d4;
+  margin: 2rem auto;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #8a8a8a;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  letter-spacing: 0.02rem;
+}
+footer ul li a:hover {
+  color: #2a2a2a;
+}
+footer > p:last-child {
+  color: #8a8a8a;
+  font-size: 0.9rem;
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

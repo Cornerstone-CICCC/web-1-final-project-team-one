@@ -16,46 +16,8 @@ span {
   font-family: "Nunito", sans-serif;
 }
 
-.page-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 1.5rem 0rem;
-  gap: 2rem;
-}
-@media (max-width: 768px) {
-  .page-title {
-    gap: 1rem;
-  }
-}
-.page-title h1 {
-  text-align: center;
-  font-weight: 400;
-  font-size: 80px;
-  letter-spacing: 10px;
-  color: #725A58;
-}
-@media (max-width: 768px) {
-  .page-title h1 {
-    font-size: 2rem;
-    letter-spacing: 5px;
-  }
-}
-.page-title h2 {
-  font-size: 3rem;
-  font-weight: 400;
-  color: #E3B6B1;
-}
-@media (max-width: 768px) {
-  .page-title h2 {
-    font-size: 2.25rem;
-  }
-}
-
 header {
-  background-color: #f5f0eb;
-  border-bottom: 1px solid #d4d4d4;
+  background-color: #F8F6F4;
   padding: 1.5rem 3rem;
   font-family: "baskervville", serif;
 }
@@ -116,6 +78,44 @@ header .navbar .logo {
 header .navbar .logo img {
   height: 100px;
   width: auto;
+}
+
+.page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 0rem;
+  gap: 2rem;
+  background-color: #F8F6F4;
+}
+@media (max-width: 768px) {
+  .page-title {
+    gap: 1rem;
+  }
+}
+.page-title h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 80px;
+  letter-spacing: 10px;
+  color: #725A58;
+}
+@media (max-width: 768px) {
+  .page-title h1 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+  }
+}
+.page-title h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #E3B6B1;
+}
+@media (max-width: 768px) {
+  .page-title h2 {
+    font-size: 2.25rem;
+  }
 }
 
 .about-main {
@@ -251,6 +251,7 @@ header .navbar .logo img {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  background-color: #F8F6F4;
 }
 .about-brand h2 {
   font-size: 3rem;
@@ -282,6 +283,67 @@ header .navbar .logo img {
   max-width: 5.625rem;
   max-height: 4.875rem;
   object-fit: contain;
+}
+
+footer {
+  background-color: #F8F6F4;
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+  font-family: "baskervville", serif;
+}
+footer .logo {
+  margin-bottom: 1rem;
+}
+footer .logo img {
+  height: 120px;
+  width: auto;
+}
+footer > p {
+  color: #8a8a8a;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02rem;
+}
+footer i {
+  font-size: 1.5rem;
+  color: #8a8a8a;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+footer i:hover {
+  color: #2a2a2a;
+}
+footer .divider {
+  width: 100%;
+  max-width: 1200px;
+  height: 1px;
+  background-color: #d4d4d4;
+  margin: 2rem auto;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #8a8a8a;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  letter-spacing: 0.02rem;
+}
+footer ul li a:hover {
+  color: #2a2a2a;
+}
+footer > p:last-child {
+  color: #8a8a8a;
+  font-size: 0.9rem;
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

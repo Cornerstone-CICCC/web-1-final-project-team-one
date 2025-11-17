@@ -179,8 +179,7 @@ button {
   left: 0;
   background-color: black;
   bottom: -13px;
-  width: 100%;
-  /* underline matches button width */
+  width: 100%; /* underline matches button width */
   height: 2px;
 }
 

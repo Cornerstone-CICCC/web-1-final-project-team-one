@@ -1,4 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap");
+header {
+  background-color: #F8F6F4;
+  padding: 1.5rem 3rem;
+  font-family: "baskervville", serif;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+header .navbar .line {
+  border-left: 1px solid #b8b8b8;
+  height: 24px;
+  align-self: center;
+}
+header .navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 0;
+  align-items: center;
+}
+header .navbar ul li {
+  padding: 0 1.25rem;
+}
+header .navbar ul li a {
+  text-decoration: none;
+  color: #8a8a8a;
+  font-size: 1.15rem;
+  transition: color 0.3s ease;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+}
+header .navbar ul li a:hover {
+  color: #2a2a2a;
+}
+header .navbar ul li i {
+  font-size: 1.35rem;
+  color: #8a8a8a;
+  transition: color 0.3s ease;
+}
+header .navbar ul li i:hover {
+  color: #2a2a2a;
+}
+header .navbar .nav-left {
+  flex: 1;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+header .navbar .nav-right {
+  flex: 1;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+header .navbar .logo {
+  flex-shrink: 0;
+  margin: 0 2.5rem;
+}
+header .navbar .logo img {
+  height: 100px;
+  width: auto;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -82,7 +146,8 @@ button {
   font-weight: 50;
 }
 
-#makeup, #hairstyle {
+#makeup,
+#hairstyle {
   margin-top: 40px;
   border: none;
 }
@@ -138,6 +203,66 @@ button {
   .btn-container {
     width: 100%;
   }
+}
+footer {
+  background-color: #F8F6F4;
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+  font-family: "baskervville", serif;
+}
+footer .logo {
+  margin-bottom: 1rem;
+}
+footer .logo img {
+  height: 120px;
+  width: auto;
+}
+footer > p {
+  color: #8a8a8a;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02rem;
+}
+footer i {
+  font-size: 1.5rem;
+  color: #8a8a8a;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+footer i:hover {
+  color: #2a2a2a;
+}
+footer .divider {
+  width: 100%;
+  max-width: 1200px;
+  height: 1px;
+  background-color: #d4d4d4;
+  margin: 2rem auto;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #8a8a8a;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  letter-spacing: 0.02rem;
+}
+footer ul li a:hover {
+  color: #2a2a2a;
+}
+footer > p:last-child {
+  color: #8a8a8a;
+  font-size: 0.9rem;
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

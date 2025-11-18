@@ -9,14 +9,50 @@
 </head>
 
 <body>
+	<header>
+		<nav class="navbar">
+			<ul class="nav-left">
+				<li><a href="/homepage">Home</a></li>
+				<div class="line"></div>
+				<li><a href="/portfolio">My Work</a></li>
+				<div class="line"></div>
+				<li><a href="/services">Services</a></li>
+				<div class="line"></div>
+				<li><a href="/classes">Classes</a></li>
+			</ul>
+
+			<div class="logo">
+				<img src="/assets/logo/cb_logo.png" alt="Carla Beauty">
+			</div>
+
+			<ul class="nav-right">
+				<li><a href="/beauty-tips">Beauty Tips</a></li>
+				<div class="line"></div>
+				<li><a href="/about">About</a></li>
+				<div class="line"></div>
+				<li><a href="/contact">Contact</a></li>
+				<div class="line"></div>
+				<li><a href="/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
+			</ul>
+		</nav>
+	</header>
 	<div class="page-title">
 		<h2>ABOUT</h2>
 		<h1>CARLA BEAUTY</h1>
 	</div>
 	<main class="about-main">
-		<button class="services-chat">
-			<img src="/assets/icons/ic_chat.svg" alt="Chat Icon">
-		</button>
+		<div class="chat-buttons">
+			<div class="chat-button-container close" id="chat-contact-icons">
+				<img src="/assets/icons/icon_instagram.svg" class="fake-button" alt="Instagram Icon">
+				<img src="/assets/icons/icon_phone.svg" class="fake-button" alt="Phone Icon">
+				<img src="/assets/icons/icon_whatsapp.svg" class="fake-button" alt="Whatsapp Icon">
+				<img src="/assets/icons/icon_close.svg" id="close-button" alt="Close Icon">
+			</div>
+			<div class="chat-button-container open" id="chat-icon">
+				<div></div>
+				<img src="/assets/icons/ic_chat.svg" id="chat-button" alt="Chat Icon">
+			</div>
+		</div>
 		<section class="about-content">
 			<div class="about-image">
 				<img src="/assets/carla/carla_bw.jpg" alt="Carla">
@@ -31,7 +67,7 @@
 					experience in Brazil and Canada, my goal is to provide clients with an unforgettable experience that leaves
 					them feeling beautiful and confident.
 				</p>
-				<button>My Work</button>
+				<button class="fake-button">My Work</button>
 			</div>
 		</section>
 	</main>
@@ -48,6 +84,28 @@
 			<img src="/assets/about/brand8.png" alt="Brand 8">
 		</div>
 	</section>
+	<footer>
+		<div class="logo">
+			<img src="/assets/logo/cb_logo.png" alt="Carla Beauty">
+		</div>
+		<p>Expert Makeup and Hairstyle Studio</p>
+		<i class="fa-solid fa-phone"></i>
+		<i class="fa-brands fa-whatsapp"></i>
+		<i class="fa-brands fa-instagram"></i>
+		<div class="divider"></div>
+		<ul>
+			<li><a href="/homepage">Home</a></li>
+			<li><a href="/portfolio">My Work</a></li>
+			<li><a href="/services">Services</a></li>
+			<li><a href="/classes">Classes</a></li>
+			<li><a href="/beauty-tips">Beauty Tips</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/contact">Contact</a></li>
+		</ul>
+		<div class="divider"></div>
+		<p>Copyright 2025, Carla Beauty</p>
+	</footer>
+	<script src="script.js"></script>
 </body>
 
 </html>
